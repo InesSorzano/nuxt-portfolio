@@ -2,7 +2,7 @@
   <div class="flex ">
 
     <!-- Redes sociales -->
-    <div class=" h-[calc(100vh-8rem)]  w-10 fixed left-16 justify-center flex flex-col items-center">
+    <div class=" left-0 h-[calc(100vh-8rem)]  w-10 fixed md:left-16 justify-center flex flex-col items-center">
       <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank">
          <img src="../assets/images/github.png" alt="github logo">
       </a>
@@ -13,7 +13,7 @@
     <!--  -->
     
     <!-- Contenido principal -->
-    <div class=" h-full text-center w-full mx-20 px-10  large-xl:mx-5 xl:px-1">
+    <div class=" h-full text-center w-full mx-5 md:mx-20 px-10  large-xl:mx-5 xl:px-1">
       <!-- Ïndice -->
       <div id="index">
       </div>
@@ -74,7 +74,7 @@
     <!--  -->
 
     <!-- Anclas derecha -->
-    <div class=" h-[calc(100vh-8rem)]  w-10 fixed right-16 justify-center flex items-center ">
+    <div class=" h-[calc(100vh-8rem)]  w-10 fixed right-0 md:right-16 justify-center flex items-center ">
       <ul>
         <li class="my-10 rounded-full border-solid border-2 border-black w-7  flex justify-center items-center">
           <NuxtLink :to="{ path: '/',hash:'#index'}" class="items-center"><strong>.</strong></NuxtLink>
