@@ -148,8 +148,9 @@
         </li>
       </ul>
     </div>
-</div>
+  </div>
 </Nav>
+<Footer></Footer>
 </template>
 
 <script >
