@@ -138,13 +138,13 @@
     <div class=" h-[calc(100vh-8rem)]  w-10 fixed right-0 md:right-16 justify-center flex items-center ">
       <ul>
         <li >
-          <NuxtLink to="#index"  class="m-5 w-5 h-5 bg-slate-400 rounded-full flex justify-center"></NuxtLink>
+          <NuxtLink to="#about" :class="currentAnchor === 'about' ? 'bg-slate-900' : 'bg-slate-400'"  @click="handleAnchorClick" class=" m-5 w-5 h-5 rounded-full flex justify-center"></NuxtLink>
         </li>
-        <li >
-          <NuxtLink to="#experience" class="m-5 w-5 h-5 bg-slate-900 rounded-full flex justify-center"> </NuxtLink>
+        <li > 
+          <NuxtLink to="#experience" :class="currentAnchor === 'experience' ? 'bg-slate-900' : 'bg-slate-400'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="#contact"  class="m-5 w-5 h-5 bg-slate-400 rounded-full flex justify-center"> </NuxtLink>
+          <NuxtLink to="#contact"  :class="currentAnchor === 'contact' ? 'bg-slate-900' : 'bg-slate-400'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
         </li>
       </ul>
     </div>
@@ -164,7 +164,44 @@
         }
       ]
     },
+    data() {
+      return{
+        currentAnchor: "about"
+      };
+    },
+    mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.handleScroll);
+    },
     methods: {
+      handleAnchorClick(event) {
+        const href = event.target.getAttribute('href');
+        const anchor = href.substring(1); 
+
+        if (document.getElementById(anchor)) {
+          this.currentAnchor = anchor;
+          console.log(anchor);
+        }
+      },
+      handleScroll() {
+        const anchorNames = ["about", "experience", "contact"];
+        const scrollPosition = window.scrollY - 80; 
+        for (const anchor of anchorNames) {
+          const element = document.getElementById(anchor); 
+          const rect = element.getBoundingClientRect();
+
+          if (rect.top <= scrollPosition && rect.bottom >= scrollPosition) {
+            // Aquí sucede el cambio
+            let newAnchor = element.getAttribute('id');
+            if (newAnchor !== this.currentAnchor){
+              this.currentAnchor = newAnchor; 
+              break;
+            }
+          }
+        }
+      },
       resetForm(){
           document.getElementById("name").value="";
           document.getElementById("email").value="";
