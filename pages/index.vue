@@ -43,8 +43,13 @@
               </span>
 
               <p class="text-gray-700 text-base">
-                
+                Soy una persona con experiencia sobre todo, en apliaciones web. 
               </p>
+              <p>
+                No obstante, he trabajado en varios proyectos tales como aplicaciones móviles, apliaciones de escritorio y bots de todo tipo. 
+              </p>
+              <p>Me encanta la programación y me gusta mucho aprender cosas nuevas al respecto.</p>
+              
               <div class=" mt-4 space-x-3 md:mt-6">
                   <a  href="files/cv.pdf" download="cv_inessorzano.pdf"  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300  ">
                     Currículum
@@ -66,7 +71,7 @@
         <CardBorder>
           <Experience src="/images/panoi.jpg">
             <template #content> 
-              <p class="float-right"> 2021 - Now</p>
+              <p class="float-right bg-slate-200	"> 2021 - Now</p>
               <p><b style="color: green;"> Panoimagen </b></p>
               <p>Web application development with Django and Nodejs </p>
               <p>Backend: Django (Python)</p>
@@ -80,11 +85,9 @@
           
           <Experience src="/images/studies.png">
             <template #content> 
-              <p class="float-right"> 2020 - 2021</p>
+              <p class="float-right bg-slate-200	"> 2020 - 2021</p>
               <p><strong>  IES.Comercio</strong>  </p> 
-              <p>Grado Superior de Desarrollo de Aplicaciones Multiplataforma</p>
-              
-              <p>Comercio Grado Superior de Desarrollo de Aplicaciones Multiplataforma</p>
+              <p>FP (DAM) Cross-Platform App Development</p>
             </template>
           </Experience>
         </CardBorder>
@@ -187,7 +190,7 @@
       },
       handleScroll() {
         const anchorNames = ["about", "experience", "contact"];
-        const scrollPosition = window.scrollY - 80; 
+        const scrollPosition = window.scrollY + 50; 
         for (const anchor of anchorNames) {
           const element = document.getElementById(anchor); 
           const rect = element.getBoundingClientRect();
