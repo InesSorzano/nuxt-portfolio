@@ -3,7 +3,7 @@
         <header class="shadow-sm bg-white dark:bg-slate-800 dark:shadow-gray-900">
             <nav class="container mx-auto p-4 flex  justify-center ">
                 <ul>
-                    <li ><p> © Ines Sorzano Cabrera 2023 </p> </li>
+                    <li ><p> © Ines Sorzano Cabrera {{ currentYear }} </p> </li>
                     <li class="w-20 flex mx-auto dark:w-26 ">
                         <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class=" rounded-full dark:m-1 dark:bg-slate-100">
                             <img src="/images/github.png" alt="github logo">
@@ -23,3 +23,12 @@
     color: black;
   }
 </style>
+<script>
+export default {
+    data(){
+        return{
+            currentYear: new Date().getFullYear()
+        }
+    }
+}
+</script>
