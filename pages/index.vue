@@ -69,7 +69,7 @@
       <div id="experience" class="my-5">
         <h1 class="font-bold"> EXPERIENCE</h1>
         <CardBorder>
-          <Experience src="/images/panoi.jpg">
+          <Experience src="/images/panoi.png">
             <template #content> 
               <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - Now</p>
               <p><b style="color: green;"> Panoimagen </b></p>
