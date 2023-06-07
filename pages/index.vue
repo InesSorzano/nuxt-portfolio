@@ -3,11 +3,11 @@
   <div class="flex ">
 
     <!-- Redes sociales -->
-    <div class="left-0 h-[calc(100vh-8rem)]  w-10 fixed md:left-16 justify-center flex flex-col items-center">
-      <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank">
+    <div class="left-0 h-[calc(100vh-8rem)]  w-10  fixed md:left-16 justify-center flex flex-col items-center dark:w-12">
+      <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class="dark:m-2 dark:bg-slate-100 rounded-full ">
          <img src="/images/github.png" alt="github logo">
       </a>
-      <a href="https://www.linkedin.com/in/in%C3%A9s-sorzano-5a2907208" rel="noopener noreferrer" target="_blank">
+      <a href="https://www.linkedin.com/in/in%C3%A9s-sorzano-5a2907208" rel="noopener noreferrer" target="_blank" class="dark:m-2 dark:bg-slate-100 rounded ">
           <img src="/images/linkedin.png" alt="linkedin logo">
       </a>
     </div>
@@ -22,9 +22,9 @@
       <!-- Sobre mí -->
       <div id="about" class="max-h-fit ">
         <!-- Tarjeta -->
-        <div class=" mx-auto max-w-sm w-full lg:max-w-full lg:flex bg-white rounded-3xl shadow-md shadow-gray-500 my-5" >
+        <div class=" mx-auto max-w-sm w-full lg:max-w-full lg:flex bg-white rounded-3xl shadow-md shadow-gray-500 my-5 dark:bg-slate-800 dark:shadow-gray-900" >
           <!-- Imagen de perfil -->
-          <div class=" m-10 h-56 lg:h-auto lg:w-56 flex bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"  title="Woman holding a mug">
+          <div class=" m-10 h-56 lg:h-auto lg:w-56 flex bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"  title="profile pic">
             <div class="relative lg:w-48  m-auto h-100 mx-auto" >
               <img src="/images/profile_pic.jpg" class="w-48  mx-auto rounded-full shadow-lg">
             </div>
@@ -35,26 +35,26 @@
             <div class="mb-8">
               <p class="text-sm text-gray-600 flex items-center">
               </p>
-              <div class="text-gray-900 font-bold text-xl mb-2">
+              <div class="text-gray-100 font-bold text-xl mb-2">
                 Inés Sorzano Cabrera
               </div>
               <span class="text-sm text-gray-500 ">
                 Full stack junior developer
               </span>
 
-              <p class="text-gray-700 text-base">
-                Soy una persona con experiencia sobre todo, en apliaciones web. 
+              <p class="text-base">
+                I'm a full stack web developer, eager to learn and face new challenges. 
               </p>
               <p>
-                No obstante, he trabajado en varios proyectos tales como aplicaciones móviles, apliaciones de escritorio y bots de todo tipo. 
+               As a web dev I have worked on database design, backend, frontend and production server maintenance.
               </p>
-              <p>Me encanta la programación y me gusta mucho aprender cosas nuevas al respecto.</p>
+              <p>I would rather specialize in backend development but I can adapt to any role, what I value the most is learning to do my best job and apply  good practices</p>
               
               <div class=" mt-4 space-x-3 md:mt-6">
                   <a  href="files/cv.pdf" download="cv_inessorzano.pdf"  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300  ">
-                    Currículum
+                    CV
                   </a>
-                  <a  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-500 ">
+                  <a  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300  "  >
                     <NuxtLink to="#contact">Contact</NuxtLink>
                   </a>
               </div>
@@ -71,7 +71,7 @@
         <CardBorder>
           <Experience src="/images/panoi.jpg">
             <template #content> 
-              <p class="float-right bg-slate-200	"> 2021 - Now</p>
+              <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - Now</p>
               <p><b style="color: green;"> Panoimagen </b></p>
               <p>Web application development with Django and Nodejs </p>
               <p>Backend: Django (Python)</p>
@@ -85,7 +85,7 @@
           
           <Experience src="/images/studies.png">
             <template #content> 
-              <p class="float-right bg-slate-200	"> 2020 - 2021</p>
+              <p class="float-right bg-gray-200 rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2020 - 2021</p>
               <p><strong>  IES.Comercio</strong>  </p> 
               <p>FP (DAM) Cross-Platform App Development</p>
             </template>
@@ -109,13 +109,13 @@
                     <a href="mailto:inessorzano@gmail.com" class="mb-1">inessorzano@gmail.com</a>
                   </p>
                   <label class="block">
-                    <input type="text" placeholder="Name"  name="name" id="name" required class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-b-2 border-gray-200">
+                    <input type="text" placeholder="Name"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block">
-                    <input type="email" placeholder="Email" name="email" id="email" required class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-b-2 border-gray-200 ">
+                    <input type="email" placeholder="Email" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block  ">
-                    <textarea rows="3" id="message" v-model="message" name="message" required class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 border-2 border-gray-200"></textarea>
+                    <textarea rows="3" id="message" v-model="message" name="message" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700"></textarea>
                   </label>
                   <!-- HIDDEN SPINNER -->
 
@@ -141,13 +141,13 @@
     <div class=" h-[calc(100vh-8rem)]  w-10 fixed right-0 md:right-16 justify-center flex items-center ">
       <ul>
         <li >
-          <NuxtLink to="#about" :class="currentAnchor === 'about' ? 'bg-slate-900' : 'bg-slate-400'"  @click="handleAnchorClick" class=" m-5 w-5 h-5 rounded-full flex justify-center"></NuxtLink>
+          <NuxtLink to="#about" :class="currentAnchor === 'about' ? 'bg-slate-900 dark:bg-slate-100' : 'bg-slate-500'"  @click="handleAnchorClick" class=" m-5 w-5 h-5 rounded-full flex justify-center"></NuxtLink>
         </li>
         <li > 
-          <NuxtLink to="#experience" :class="currentAnchor === 'experience' ? 'bg-slate-900' : 'bg-slate-400'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
+          <NuxtLink to="#experience" :class="currentAnchor === 'experience' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-500'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="#contact"  :class="currentAnchor === 'contact' ? 'bg-slate-900' : 'bg-slate-400'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
+          <NuxtLink to="#contact"  :class="currentAnchor === 'contact' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-500'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
         </li>
       </ul>
     </div>
