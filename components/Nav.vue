@@ -1,7 +1,7 @@
 <template>
     <div>
-        <header class="shadow-sm bg-white dark:shadow-gray-900">
-            <nav class="container mx-auto p-4 flex justify-center dark:bg-slate-800  ">
+        <header class="shadow-sm bg-slate-100 dark:shadow-gray-900 dark:bg-slate-800 ">
+            <nav class="container mx-auto p-4 flex justify-center  ">
                 <ul class="flex gap-4 ">
                     <li> <NuxtLink to="#index">Home</NuxtLink></li>
                     <li> <NuxtLink to="#experience">Experience</NuxtLink></li>
