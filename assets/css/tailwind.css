@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-200 dark:bg-slate-700;
+    @apply bg-slate-300 dark:bg-slate-700;
     min-width: 530px;
     
   }

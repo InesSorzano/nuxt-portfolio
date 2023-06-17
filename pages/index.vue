@@ -22,11 +22,11 @@
       <!-- Sobre mí -->
       <div id="about" class="max-h-fit ">
         <!-- Tarjeta -->
-        <div class=" mx-auto max-w-sm w-full lg:max-w-full lg:flex bg-white rounded-3xl shadow-md shadow-gray-500 my-5 dark:bg-slate-800 dark:shadow-gray-900" >
+        <div class=" mx-auto max-w-sm w-full lg:max-w-full lg:flex bg-slate-100 rounded-3xl shadow-md shadow-gray-500 my-5 dark:bg-slate-800 dark:shadow-gray-900" >
           <!-- Imagen de perfil -->
           <div class=" m-10 h-56 lg:h-auto lg:w-56 flex bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"  title="profile pic">
             <div class="relative lg:w-48  m-auto h-100 mx-auto" >
-              <img src="/images/profile_pic.jpg" class="w-48  mx-auto rounded-full shadow-lg">
+              <img src="/images/profile_pic.jpg" alt="profile pic" class="w-48  mx-auto rounded-full shadow-lg bg-slate-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700">
             </div>
           </div>
   
@@ -42,14 +42,9 @@
                 Full stack junior developer
               </span>
 
-              <p class="text-base">
-                I'm a full stack web developer, eager to learn and face new challenges. 
-              </p>
-              <p>
-               As a web dev I have worked on database design, backend, frontend and production server maintenance.
-              </p>
-              <p>I would rather specialize in backend development but I can adapt to any role, what I value the most is learning to do my best job and apply  good practices</p>
-              
+              <p class="my-4">{{ $t('description1') }}</p>
+              <p>{{ $t('description2') }}</p>
+              <p class="my-4">{{ $t('description3') }}</p>
               <div class=" mt-4 space-x-3 md:mt-6">
                   <a  href="files/cv.pdf" download="cv_inessorzano.pdf"  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300  ">
                     CV
@@ -67,19 +62,20 @@
 
       <!-- Experiencia -->
       <div id="experience" class="my-5">
-        <h1 class="font-bold"> EXPERIENCE</h1>
+        <h1 class="font-bold">{{ $t('experience').toUpperCase() }}</h1>
         <CardBorder>
           <Experience src="/images/panoi.png">
             <template #content> 
-              <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - Now</p>
+              <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - {{ $t('now') }}</p>
               <p><b style="color: green;"> Panoimagen </b></p>
-              <p>Web application development with Django and Nodejs </p>
-              <p>Backend: Django (Python)</p>
-              <p>Database management: PostgreSQL</p>
-              <p>Front end HTML, CSS, Javascript, Node.js, Bootstrap and TailwindCSS</p>
-              <p>Nginx</p>
-              <p>Tasks: Redis y Celery</p>
-              <p>Object detection: Detectron2 and Tensorflow lite</p>
+              <p > {{ $t('panoimagen1') }} </p>
+              <p > {{ $t('panoimagen2') }} </p>
+              <p > {{ $t('panoimagen3') }} </p>
+              <p > {{ $t('panoimagen4') }} </p>
+              <p > {{ $t('panoimagen5') }} </p>
+              <p > {{ $t('panoimagen6') }} </p>
+              <p > {{ $t('panoimagen7') }} </p>
+
             </template>
           </Experience>
           
@@ -87,7 +83,7 @@
             <template #content> 
               <p class="float-right bg-gray-200 rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2020 - 2021</p>
               <p><strong>  IES.Comercio</strong>  </p> 
-              <p>FP (DAM) Cross-Platform App Development</p>
+              <p > {{ $t('comercio') }}</p>
             </template>
           </Experience>
         </CardBorder>
@@ -95,9 +91,9 @@
       <!--  -->
 
       <!-- Contacto -->
-      <a name ="contact">
+      <a >
         <div id="contact" class="my-5">
-          <h1 class="font-bold"> CONTACT ME</h1>
+          <h1 class="font-bold">{{ $t('contact').toUpperCase() }}</h1>
           <CardBorder>
             <section class="py-6  mx-0">
                 <form ref="form" @submit.prevent="sendEmail" method="POST" target="_blank" rel="noopener noreferrer"  class="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
@@ -109,10 +105,10 @@
                     <a href="mailto:inessorzano@gmail.com" class="mb-1">inessorzano@gmail.com</a>
                   </p>
                   <label class="block">
-                    <input type="text" placeholder="Name"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
+                    <input type="text" v-bind:placeholder="$t('name')"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block">
-                    <input type="email" placeholder="Email" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
+                    <input type="email" v-bind:placeholder="$t('email')" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block  ">
                     <textarea rows="3" id="message" v-model="message" name="message" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700"></textarea>
@@ -140,14 +136,8 @@
     <!-- Anclas derecha -->
     <div class=" h-[calc(100vh-8rem)]  w-10 fixed right-0 md:right-16 justify-center flex items-center ">
       <ul>
-        <li >
-          <NuxtLink to="#about" :class="currentAnchor === 'about' ? 'bg-slate-900 dark:bg-slate-100' : 'bg-slate-500'"  @click="handleAnchorClick" class=" m-5 w-5 h-5 rounded-full flex justify-center"></NuxtLink>
-        </li>
-        <li > 
-          <NuxtLink to="#experience" :class="currentAnchor === 'experience' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-500'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="#contact"  :class="currentAnchor === 'contact' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-500'" class="bg-slate-400 m-5 w-5 h-5 rounded-full flex justify-center"> </NuxtLink>
+        <li v-for="anchor in anchorNames">
+          <NuxtLink :to="'#'+anchor" :class="currentAnchor ===  anchor  ? 'bg-slate-900 dark:bg-slate-100' : 'bg-slate-500'"  @click="handleAnchorClick" class=" m-5 w-5 h-5 rounded-full flex justify-center"></NuxtLink>
         </li>
       </ul>
     </div>
@@ -158,6 +148,8 @@
 
 <script >
   import emailjs from '@emailjs/browser';
+  import { useI18n, useLocalePath } from '#imports'
+
 
   export default {
     head: {
@@ -169,7 +161,8 @@
     },
     data() {
       return{
-        currentAnchor: "about"
+        currentAnchor: "about",
+        anchorNames: ["about", "experience", "contact"]
       };
     },
     mounted() {
@@ -189,9 +182,8 @@
         }
       },
       handleScroll() {
-        const anchorNames = ["about", "experience", "contact"];
-        const scrollPosition = window.scrollY + 50; 
-        for (const anchor of anchorNames) {
+        const scrollPosition = window.scrollY - 250 ; 
+        for (const anchor of this.anchorNames) {
           const element = document.getElementById(anchor); 
           const rect = element.getBoundingClientRect();
 
@@ -232,6 +224,8 @@
       
     }
   }
+  
+
 </script>
 
 <style scoped>
