@@ -4,6 +4,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxtjs/i18n'
     ],
+    ssr: false,
     i18n: {
         locales: [
             {
@@ -22,7 +23,6 @@ export default defineNuxtConfig({
         defaultLocale: 'es',
         strategy: 'prefix_except_default'
     },
-    ssr: false,
     app: {
         baseURL: '/nuxt-portfolio/'
     }
