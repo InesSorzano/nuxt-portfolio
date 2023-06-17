@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="shadow-sm bg-white dark:bg-slate-800 dark:shadow-gray-900">
+        <header class="shadow-sm bg-slate-300 dark:bg-slate-700 dark:shadow-gray-900">
             <nav class="container mx-auto p-4 flex  justify-center ">
                 <ul>
                     <li ><p> © Ines Sorzano Cabrera {{ currentYear }} </p> </li>
