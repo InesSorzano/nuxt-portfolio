@@ -68,13 +68,14 @@
             <template #content> 
               <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - Ahora</p>
               <p><b style="color: green;"> Panoimagen </b></p>
-              <p>Desarrollo de aplicaciones web con Django y Nodejs </p>
-              <p>Backend: Django (Python)</p>
-              <p>Gestión de base de datos: PostgreSQL</p>
-              <p>Frontend HTML5, CSS3, Javascript, Node.js, Bootstrap y TailwindCSS</p>
-              <p>Despliegue servidor con Nginx</p>
-              <p>Tareas asíncronas: Redis y Celery</p>
-              <p>Detección de objetos: Detectron2 y Tensorflow lite </p>
+              <br/>
+              <p>- Desarrollo de aplicaciones web con Django y Nodejs </p>
+              <p>- Backend: Django (Python)</p>
+              <p>- Gestión de base de datos: PostgreSQL</p>
+              <p>- Frontend HTML5, CSS3, Javascript, Node.js, Bootstrap y TailwindCSS</p>
+              <p>- Despliegue servidor con Nginx</p>
+              <p>- Tareas asíncronas: Redis y Celery</p>
+              <p>- Detección de objetos: Detectron2 y Tensorflow lite </p>
 
             </template>
           </Experience>
@@ -83,7 +84,8 @@
             <template #content> 
               <p class="float-right bg-gray-200 rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2020 - 2021</p>
               <p><strong>  IES.Comercio</strong>  </p> 
-              <p>FP (DAM) Desarrollo de aplicaciones multiplataforma</p>
+              <br/>
+              <p>- FP (DAM) Desarrollo de aplicaciones multiplataforma</p>
             </template>
           </Experience>
         </CardBorder>
