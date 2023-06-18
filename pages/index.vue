@@ -42,9 +42,9 @@
                 Full stack junior developer
               </span>
 
-              <p class="my-4">{{ $t('description1') }}</p>
-              <p>{{ $t('description2') }}</p>
-              <p class="my-4">{{ $t('description3') }}</p>
+              <p class="my-4">Soy un desarrolladora web full stack con muchas ganas de aprender y enfrentarme a nuevos retos.</p>
+              <p>He trabajado en la creación de bases de datos, programación backend, frontend y mantenimiento de servidores de producción.</p>
+              <p class="my-4">Puedo adaptarme a cualquier puesto ya que lo que más me importa es aprender para hacer mi trabajo de la mejor manera posible y aplicar buenas prácticas.</p>
               <div class=" mt-4 space-x-3 md:mt-6">
                   <a  href="files/cv.pdf" download="cv_inessorzano.pdf"  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300  ">
                     CV
@@ -62,19 +62,19 @@
 
       <!-- Experiencia -->
       <div id="experience" class="my-5">
-        <h1 class="font-bold">{{ $t('experience').toUpperCase() }}</h1>
+        <h1 class="font-bold">EXPERIENCIA</h1>
         <CardBorder>
           <Experience src="/images/panoi.png">
             <template #content> 
-              <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - {{ $t('now') }}</p>
+              <p class="float-right rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2021 - Ahora</p>
               <p><b style="color: green;"> Panoimagen </b></p>
-              <p > {{ $t('panoimagen1') }} </p>
-              <p > {{ $t('panoimagen2') }} </p>
-              <p > {{ $t('panoimagen3') }} </p>
-              <p > {{ $t('panoimagen4') }} </p>
-              <p > {{ $t('panoimagen5') }} </p>
-              <p > {{ $t('panoimagen6') }} </p>
-              <p > {{ $t('panoimagen7') }} </p>
+              <p>Desarrollo de aplicaciones web con Django y Nodejs </p>
+              <p>Backend: Django (Python)</p>
+              <p>Gestión de base de datos: PostgreSQL</p>
+              <p>Frontend HTML5, CSS3, Javascript, Node.js, Bootstrap y TailwindCSS</p>
+              <p>Despliegue servidor con Nginx</p>
+              <p>Tareas asíncronas: Redis y Celery</p>
+              <p>Detección de objetos: Detectron2 y Tensorflow lite </p>
 
             </template>
           </Experience>
@@ -83,7 +83,7 @@
             <template #content> 
               <p class="float-right bg-gray-200 rounded p-1 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate-700"> 2020 - 2021</p>
               <p><strong>  IES.Comercio</strong>  </p> 
-              <p > {{ $t('comercio') }}</p>
+              <p>FP (DAM) Desarrollo de aplicaciones multiplataforma</p>
             </template>
           </Experience>
         </CardBorder>
@@ -93,7 +93,7 @@
       <!-- Contacto -->
       <a >
         <div id="contact" class="my-5">
-          <h1 class="font-bold">{{ $t('contact').toUpperCase() }}</h1>
+          <h1 class="font-bold">CONTACTO</h1>
           <CardBorder>
             <section class="py-6  mx-0">
                 <form ref="form" @submit.prevent="sendEmail" method="POST" target="_blank" rel="noopener noreferrer"  class="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
@@ -105,10 +105,10 @@
                     <a href="mailto:inessorzano@gmail.com" class="mb-1">inessorzano@gmail.com</a>
                   </p>
                   <label class="block">
-                    <input type="text" v-bind:placeholder="$t('name')"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
+                    <input type="text" v-bind:placeholder="Nombre"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block">
-                    <input type="email" v-bind:placeholder="$t('email')" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
+                    <input type="email" v-bind:placeholder="Correo" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block  ">
                     <textarea rows="3" id="message" v-model="message" name="message" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700"></textarea>
@@ -148,9 +148,6 @@
 
 <script >
   import emailjs from '@emailjs/browser';
-  import { useI18n, useLocalePath } from '#imports'
-
-
   export default {
     head: {
       script: [
