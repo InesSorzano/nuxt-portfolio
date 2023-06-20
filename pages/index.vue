@@ -104,7 +104,7 @@
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                     </svg>
-                    <a href="mailto:inessorzano@gmail.com" class="mb-1">inessorzano@gmail.com</a>
+                    <a href="mailto:contacto@inessorzano.com" class="mb-1">contacto@inessorzano.com</a>
                   </p>
                   <label class="block">
                     <input type="text" v-bind:placeholder="Nombre"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
