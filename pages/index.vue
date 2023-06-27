@@ -4,10 +4,10 @@
 
     <!-- Redes sociales -->
     <div class="left-0 h-[calc(100vh-8rem)]  w-10  fixed md:left-16 justify-center flex flex-col items-center dark:w-12">
-      <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class="dark:m-2 dark:bg-slate-100 rounded-full ">
+      <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class="dark:m-1 dark:bg-slate-100 rounded-full ">
          <img src="/images/github.png" alt="github logo">
       </a>
-      <a href="https://www.linkedin.com/in/in%C3%A9s-sorzano-5a2907208" rel="noopener noreferrer" target="_blank" class="dark:m-2 dark:bg-slate-100 rounded ">
+      <a href="https://www.linkedin.com/in/in%C3%A9s-sorzano-5a2907208" rel="noopener noreferrer" target="_blank" class="dark:m-1 dark:bg-slate-100 rounded ">
           <img src="/images/linkedin.png" alt="linkedin logo">
       </a>
     </div>
@@ -16,11 +16,11 @@
     <!-- Contenido principal -->
     <div class=" h-full text-center w-full mx-5 md:mx-40 px-10 ">
       <!-- Ïndice -->
-      <div id="index" class="my-5">
+      <div id="index" class="my-5 ">
       </div>
      
       <!-- Sobre mí -->
-      <div id="about" class="max-h-fit ">
+      <div id="about" class="max-h-fit dark:text-gray-100">
         <!-- Tarjeta -->
         <div class=" mx-auto max-w-sm w-full lg:max-w-full lg:flex bg-slate-100 rounded-3xl shadow-md shadow-gray-500 my-5 dark:bg-slate-800 dark:shadow-gray-900" >
           <!-- Imagen de perfil -->
@@ -35,7 +35,7 @@
             <div class="mb-8">
               <p class="text-sm text-gray-600 flex items-center">
               </p>
-              <div class="text-gray-100 font-bold text-xl mb-2">
+              <div class=" font-bold text-xl mb-2 ">
                 Inés Sorzano Cabrera
               </div>
               <span class="text-sm text-gray-500 ">
