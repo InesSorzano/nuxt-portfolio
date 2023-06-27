@@ -210,8 +210,7 @@
         let submit_text = document.getElementById("submit_text");
         spinner.classList.remove("hidden");
         submit_text.innerHTML = "";
-        emailjs.sendForm( ${{ vars.SERVICE_ID  }},  ${{ vars.TEMPLATE_ID  }}, this.$refs.form,  ${{ vars.AAPI_KEY  }})
-          .then((result) => {
+        emailjs.sendForm('service_x653keh', 'template_3c4pmkm', this.$refs.form, 'YEznwqMeHyGnJg_Xx')          .then((result) => {
               console.log('SUCCESS!', result.text);
               this.restoreSendButton(spinner,submit_text);
               this.resetForm();
