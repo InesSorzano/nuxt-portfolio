@@ -4,8 +4,14 @@
 
 body {
     @apply bg-slate-300 dark:bg-slate-700;
-    
+
   }
+
+body * {
+  @apply transition-colors duration-75;
+
+}
+
 @layer base {
   html {
     @apply scroll-smooth dark:text-slate-200;
