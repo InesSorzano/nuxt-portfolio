@@ -1,10 +1,11 @@
 <template>
     <div>
-        <header class="shadow-sm bg-slate-100 dark:shadow-gray-900 dark:bg-slate-800  dark:text-gray-100">
-            <button  @click="setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')" class=" right-2 pt-3  h-8 w-8 z-10 absolute" >
+        <header class="relative shadow-sm bg-slate-100 dark:shadow-gray-900 dark:bg-slate-800  dark:text-gray-100">
+            
+            <nav>
+                <button  @click="setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')" class="right-3  top-3  h-8 w-8 z-10 absolute">
                 <img :src="'images/' + colorMode.preference + '.png'" >
                 </button>
-            <nav>
                 <div  class="container mx-auto p-4 flex justify-center  ">
                     <ul class="flex gap-4 ">
                         <li> <NuxtLink to="#index">Inicio</NuxtLink></li>
@@ -13,7 +14,7 @@
                     </ul>
                 </div>
                 
-
+             
             </nav>
 
         </header>
