@@ -3,11 +3,11 @@
   <div class="flex ">
 
     <!-- Redes sociales -->
-    <div class="hidden sm:flex  left-0 h-[calc(100vh-8rem)]  w-10  fixed md:left-16 justify-center  flex-col items-center dark:w-12">
-      <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class="dark:m-1 dark:bg-slate-100 rounded-full ">
+    <div class="hidden sm:flex  left-0 h-[calc(100vh-8rem)]  w-12   fixed md:left-16 justify-center  flex-col items-center ">
+      <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class="m-1 dark:bg-slate-100 rounded-full ">
          <img src="/images/github.png" alt="github logo">
       </a>
-      <a href="https://www.linkedin.com/in/in%C3%A9s-sorzano-5a2907208" rel="noopener noreferrer" target="_blank" class="dark:m-1 dark:bg-slate-100 rounded ">
+      <a href="https://www.linkedin.com/in/in%C3%A9s-sorzano-5a2907208" rel="noopener noreferrer" target="_blank" class="m-1 dark:bg-slate-100 rounded ">
           <img src="/images/linkedin.png" alt="linkedin logo">
       </a>
     </div>
@@ -61,8 +61,8 @@
       <!--  -->
 
       <!-- Experiencia -->
-      <div id="experience" class="my-5">
-        <h1 class="font-bold">EXPERIENCIA</h1>
+      <div id="experience" class="my-5 dark:text-gray-100">
+        <h1 class="font-bold ">EXPERIENCIA</h1>
         <CardBorder>
           <Experience src="/images/panoi.png">
             <template #content> 
@@ -94,7 +94,7 @@
 
       <!-- Contacto -->
       <a >
-        <div id="contact" class="my-5">
+        <div id="contact" class="my-5 dark:text-gray-100">
           <h1 class="font-bold">CONTACTO</h1>
           <CardBorder>
             <section class="py-6  mx-0">
