@@ -4,7 +4,6 @@
 
 body {
     @apply bg-slate-300 dark:bg-slate-700;
-    min-width: 530px;
     
   }
 @layer base {

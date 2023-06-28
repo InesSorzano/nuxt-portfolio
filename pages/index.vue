@@ -3,7 +3,7 @@
   <div class="flex ">
 
     <!-- Redes sociales -->
-    <div class="left-0 h-[calc(100vh-8rem)]  w-10  fixed md:left-16 justify-center flex flex-col items-center dark:w-12">
+    <div class="hidden sm:flex  left-0 h-[calc(100vh-8rem)]  w-10  fixed md:left-16 justify-center  flex-col items-center dark:w-12">
       <a href="https://github.com/InesSorzano" rel="noopener noreferrer" target="_blank" class="dark:m-1 dark:bg-slate-100 rounded-full ">
          <img src="/images/github.png" alt="github logo">
       </a>
@@ -14,7 +14,7 @@
     <!--  -->
     
     <!-- Contenido principal -->
-    <div class=" h-full text-center w-full mx-5 md:mx-40 px-10 ">
+    <div class="mx-auto h-full text-center w-full mx-5 md:mx-40 px-10 ">
       <!-- Ïndice -->
       <div id="index" class="my-5 ">
       </div>
@@ -136,7 +136,7 @@
     <!--  -->
 
     <!-- Anclas derecha -->
-    <div class=" h-[calc(100vh-8rem)]  w-10 fixed right-0 md:right-16 justify-center flex items-center ">
+    <div class="hidden sm:flex h-[calc(100vh-8rem)]  w-10 fixed right-0 md:right-16 justify-center items-center ">
       <ul>
         <li v-for="anchor in anchorNames">
           <NuxtLink :to="'#'+anchor" :class="currentAnchor ===  anchor  ? 'bg-slate-900 dark:bg-slate-100' : 'bg-slate-500'"  @click="handleAnchorClick" class=" m-5 w-5 h-5 rounded-full flex justify-center"></NuxtLink>
