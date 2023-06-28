@@ -99,18 +99,18 @@
           <CardBorder>
             <section class="py-6  mx-0">
                 <form ref="form" @submit.prevent="sendEmail" method="POST" target="_blank" rel="noopener noreferrer"  class="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
-                  <p class="flex items-center mx-0 justify-center">
+                  <a href="mailto:contacto@inessorzano.com"  class="flex items-center mx-0 justify-center rounded-md hover:bg-white dark:hover:bg-slate-600">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                     </svg>
-                    <a href="mailto:contacto@inessorzano.com" class="mb-1">contacto@inessorzano.com</a>
-                  </p>
+                    <a class="mb-1">contacto@inessorzano.com</a>
+                  </a>
                   <label class="block">
-                    <input type="text" v-bind:placeholder="Nombre"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
+                    <input type="text" placeholder="Nombre"  name="name" id="name" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block">
-                    <input type="email" v-bind:placeholder="Correo" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
+                    <input type="email" placeholder="Correo" name="email" id="email" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700">
                   </label>
                   <label class="block  ">
                     <textarea rows="3" id="message" v-model="message" name="message" required class="px-2 outline-none block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-slate-900 border-b-2 border-gray-200 dark:bg-slate-600 dark:shadow-inner dark:shadow-slate.700"></textarea>
