@@ -27,9 +27,6 @@ jobs:
         npm run generate
       env:
         NUXT_APP_BASE_URL: ${{ vars.NUXT_APP_BASE_URL  }}
-        PUBLIC_KEY: ${{ vars.PUBLIC_KEY  }}
-        SERVICE_ID: ${{ vars.SERVICE_ID  }}
-        TEMPLATE_ID: ${{ vars.TEMPLATE_ID  }}
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
